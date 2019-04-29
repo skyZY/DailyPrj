@@ -9,7 +9,7 @@
           当用户向右滑动切换再进行加载。因为其他Fragment对于用户来说是不可见的，如果一开始就把全部Fragment一起加载，
           可能造成启动时卡顿的问题，更重要的是可能白白耗费用户的流量，因为用户可能并不需要其他Fragment的信息。
 
-Demo gif展示如下： pic/lazy-loading.gif
+Demo gif展示如下： https://raw.githubusercontent.com/skyZY/DailyPrj/master/pic/lazy-loading.gif
 
 参考文章：[https://www.jb51.net/article/121450.htm](https://www.jb51.net/article/121450.htm)
 
