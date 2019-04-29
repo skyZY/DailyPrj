@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+
+
+    <Button
+        android:id="@+id/pattern_factory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="工厂模式"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="factory"
+        />
+
+    <Button
+        android:id="@+id/pattern_ambassador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ambassador大使模式"
+        app:layout_constraintTop_toBottomOf="@+id/pattern_factory"
+        android:onClick="ambassador"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

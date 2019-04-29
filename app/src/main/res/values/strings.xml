@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DailyPrj</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="type_operand_one_hint">Type Operand 1</string>
+    <string name="type_operant_two_hint">Type Operand 2</string>
+    <string name="add_operation_text">Add</string>
+    <string name="sub_operation_text">Sub</string>
+    <string name="div_operation_text">Div</string>
+    <string name="mul_operation_text">Mul</string>
+    <string name="computationError">Error</string>
+    <string name="say_hello">Say hello</string>
+</resources>

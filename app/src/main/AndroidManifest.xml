@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sun.dailyprj">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".junit.JunitMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".junit.operate.SayHelloActivity"/>
+        <activity android:name=".junit.calculator.CalculatorActivity"/>
+
+        <activity android:name=".designpatterns.DesignPatternsActivity"/>
+        <activity android:name=".view.CustomViewActivity"/>
+
+        <activity android:name=".view.canvas.CanvasActivity"/>
+        <activity android:name=".view.canvas.BesselActivity"/>
+
+        <activity android:name=".thread.callable.CallAbleActivity"/>
+        <activity android:name=".thread.ThreadActivity"/>
+        <activity android:name=".generics.GenericsActivity"/>
+        <activity android:name=".generics.GenericAdapterActivity" />
+        <activity android:name=".WebViewActivity"/>
+        <activity android:name=".network.NetworkActivity"/>
+    </application>
+
+</manifest>

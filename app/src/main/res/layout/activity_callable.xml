@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Callbale:"/>
+        <Button
+            android:id="@+id/btn_ca1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test 一"/>
+
+        <Button
+            android:id="@+id/btn_ca2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test 二"/>
+
+        <Button
+            android:id="@+id/btn_ca3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test 三"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/txt_callable_intro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1234"
+            />
+
+    </ScrollView>
+
+</LinearLayout>
