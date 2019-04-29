@@ -56,9 +56,7 @@ public class LazyFragmentActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lazyfragment);
-
         initId();
-        
         initData();
     }
 
@@ -71,7 +69,8 @@ public class LazyFragmentActivity extends AppCompatActivity{
         FragmentManager fragmentManager = getSupportFragmentManager();
         LazyFragmentPageAdapter adapter = new LazyFragmentPageAdapter(fragmentManager,fragmentList);
         mViewPager.setAdapter(adapter);
-
+        mViewPager.setCurrentItem(0);
+        mViewPager.setOffscreenPageLimit(4);
     }
 
     private void initId() {
