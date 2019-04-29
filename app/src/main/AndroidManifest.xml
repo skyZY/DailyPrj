@@ -42,6 +42,7 @@
         <activity android:name=".generics.GenericAdapterActivity" />
         <activity android:name=".WebViewActivity"/>
         <activity android:name=".network.NetworkActivity"/>
+        <activity android:name=".lazyfragment.LazyFragmentActivity" />
     </application>
 
 </manifest>

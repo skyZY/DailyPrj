@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import com.sun.dailyprj.designpatterns.DesignPatternsActivity;
 import com.sun.dailyprj.generics.GenericsActivity;
 import com.sun.dailyprj.junit.JunitMainActivity;
+import com.sun.dailyprj.lazyfragment.LazyFragmentActivity;
 import com.sun.dailyprj.network.NetworkActivity;
 import com.sun.dailyprj.thread.ThreadActivity;
 import com.sun.dailyprj.view.CustomViewActivity;
@@ -115,5 +116,9 @@ public class MainActivity extends AppCompatActivity
 
     public void startHttp(View view) {
         startActivity(new Intent(this, NetworkActivity.class));
+    }
+
+    public void startLazyFragment(View view) {
+        startActivity(new Intent(this, LazyFragmentActivity.class));
     }
 }
