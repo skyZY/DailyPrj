@@ -30,11 +30,32 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btn_percent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/percentframelayout"
         android:onClick="percentFrameLayout"
+        android:text="@string/percentframelayout"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll" />
+
+    <Button
+        android:id="@+id/btn_databind_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:onClick="dataBindingClick"
+        android:text="Data Binding "
+        app:layout_constraintLeft_toRightOf="@+id/btn_percent"
+        app:layout_constraintTop_toBottomOf="@+id/ll" />
+
+    <Button
+        android:id="@+id/btn_recyclerview_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="@string/recyclerview_case"
+        android:onClick="startRecyclerView"
+        app:layout_constraintLeft_toRightOf="@+id/btn_databind_start"
         app:layout_constraintTop_toBottomOf="@+id/ll" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

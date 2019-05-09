@@ -6,8 +6,10 @@ import android.view.View;
 
 import com.sun.dailyprj.R;
 import com.sun.dailyprj.androidx.appcompat.DrawerLayoutActivity;
+import com.sun.dailyprj.androidx.data_binding.DataBindingActivity;
 import com.sun.dailyprj.androidx.percent.PercentFrameLayoutActivity;
 import com.sun.dailyprj.androidx.percent.PercentLayoutActivity;
+import com.sun.dailyprj.androidx.recyclerview.RecyclerViewActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -39,5 +41,13 @@ public class AndroidXActivity extends AppCompatActivity{
 
     public void percentFrameLayout(View view) {
         startActivity(new Intent(this, PercentFrameLayoutActivity.class));
+    }
+
+    public void dataBindingClick(View view) {
+        startActivity(new Intent(this, DataBindingActivity.class));
+    }
+
+    public void startRecyclerView(View view) {
+        startActivity(new Intent(this, RecyclerViewActivity.class));
     }
 }

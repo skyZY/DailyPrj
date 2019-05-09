@@ -55,6 +55,8 @@
         <activity android:name=".androidx.appcompat.DrawerLayoutActivity" />
         <activity android:name=".androidx.percent.PercentLayoutActivity" />
         <activity android:name=".androidx.percent.PercentFrameLayoutActivity" />
+        <activity android:name=".androidx.data_binding.DataBindingActivity" />
+        <activity android:name=".androidx.recyclerview.RecyclerViewActivity" />
     </application>
 
 </manifest>
