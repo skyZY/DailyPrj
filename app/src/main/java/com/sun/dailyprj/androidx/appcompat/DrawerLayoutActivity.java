@@ -1,33 +1,26 @@
-package com.sun.dailyprj.thread;
+package com.sun.dailyprj.androidx.appcompat;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import com.sun.dailyprj.R;
-import com.sun.dailyprj.thread.callable.CallAbleActivity;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 /*
  * =====================================================================================
  * Summary:
  *
- * File: ThreadActivity.java
+ * File: DrawerLayoutActivity.java
  * Author: Yanpeng.Sun
- * Create: 2019/4/24 17:04
+ * Create: 2019/5/9 10:11
  * =====================================================================================
  */
-public class ThreadActivity extends AppCompatActivity{
-
+public class DrawerLayoutActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_thread);
+        setContentView(R.layout.activity_drawablelayout);
 
-    }
-
-    public void startCallable(View view) {
-        startActivity(new Intent(this, CallAbleActivity.class));
     }
 }

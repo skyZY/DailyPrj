@@ -15,4 +15,14 @@
     <string name="mul_operation_text">Mul</string>
     <string name="computationError">Error</string>
     <string name="say_hello">Say hello</string>
+
+
+    <string name="percentframelayout">PercentFrameLayout</string>
+    <string name="percentlayout_use">PercentLayout USE</string>
+    <string name="layout_widthpercent_layout_heightpercent">可以使用的属性：
+        layout_widthPercent layout_heightPercent
+        layout_marginPercent layout_marginLeftPercent
+        layout_marginTopPercent layout_marginRightPercent
+        layout_marginBottomPercent layout_marginStartPercent
+        layout_marginEndPercent layout_aspectRatio</string>
 </resources>

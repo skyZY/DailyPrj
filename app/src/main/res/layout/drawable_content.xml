@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试DrawableLayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DrawerLayout布局的第一个子布局作为主Content布局，大小与父布局相同，
+        第二个子布局作为Menu布局，宽度可设置，其中Menu布局需要添加android:layout_gravity='right'，根据值left/start在左侧，right/end在右侧" />
+
+
+
+</LinearLayout>

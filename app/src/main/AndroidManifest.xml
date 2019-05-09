@@ -3,7 +3,12 @@
     package="com.sun.dailyprj">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
+    <!-- GPS定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -43,6 +48,13 @@
         <activity android:name=".WebViewActivity"/>
         <activity android:name=".network.NetworkActivity"/>
         <activity android:name=".lazyfragment.LazyFragmentActivity" />
+        <activity android:name=".frame.FrameActivity"/>
+        <activity android:name=".frame.glide.GlideActivity"/>
+        <activity android:name=".navigation.NavigationActivity" />
+        <activity android:name=".androidx.AndroidXActivity" />
+        <activity android:name=".androidx.appcompat.DrawerLayoutActivity" />
+        <activity android:name=".androidx.percent.PercentLayoutActivity" />
+        <activity android:name=".androidx.percent.PercentFrameLayoutActivity" />
     </application>
 
 </manifest>

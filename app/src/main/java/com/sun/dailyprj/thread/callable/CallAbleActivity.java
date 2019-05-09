@@ -1,6 +1,5 @@
 package com.sun.dailyprj.thread.callable;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -11,9 +10,10 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-import java.util.concurrent.FutureTask;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /*
  * =====================================================================================
@@ -24,7 +24,7 @@ import java.util.concurrent.TimeoutException;
  * Create: 2019/4/24 17:02
  * =====================================================================================
  */
-public class CallAbleActivity extends Activity implements View.OnClickListener{
+public class CallAbleActivity extends AppCompatActivity implements View.OnClickListener{
     private TextView mTxtIntro;
     private ExecutorService mExecutor = Executors.newSingleThreadExecutor();
 

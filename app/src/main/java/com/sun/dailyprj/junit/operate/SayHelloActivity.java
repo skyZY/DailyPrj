@@ -1,12 +1,13 @@
 package com.sun.dailyprj.junit.operate;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import com.sun.dailyprj.R;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /*
  * =====================================================================================
@@ -17,7 +18,7 @@ import com.sun.dailyprj.R;
  * Create: 2019/3/12 18:07
  * =====================================================================================
  */
-public class SayHelloActivity extends Activity{
+public class SayHelloActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
