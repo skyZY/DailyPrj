@@ -19,6 +19,7 @@ import com.sun.dailyprj.junit.JunitMainActivity;
 import com.sun.dailyprj.lazyfragment.LazyFragmentActivity;
 import com.sun.dailyprj.navigation.NavigationActivity;
 import com.sun.dailyprj.network.NetworkActivity;
+import com.sun.dailyprj.receiver.ReceiverActivity;
 import com.sun.dailyprj.thread.ThreadActivity;
 import com.sun.dailyprj.view.CustomViewActivity;
 
@@ -157,5 +158,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public void startCompat(View view) {
         startActivity(new Intent(this, AndroidXActivity.class));
+    }
+
+    public void startReceiver(View view) {
+        startActivity(new Intent(this, ReceiverActivity.class));
+
     }
 }
