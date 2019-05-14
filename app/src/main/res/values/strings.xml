@@ -36,4 +36,7 @@
     <string name="loading_products">Loading products...</string>
     <string name="cd_products_list">Products list</string>
     <string name="btn_start_baidumap">启动百度地图导航</string>
+    <string name="create_db">create db</string>
+    <string name="btn_room_insert_string">插入数据</string>
+    <string name="btn_room_update_string">更新数据</string>
 </resources>

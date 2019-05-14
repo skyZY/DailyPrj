@@ -54,6 +54,12 @@
             android:layout_height="wrap_content"
             android:onClick="startNavigation"
             android:text="导航app" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startReceiver"
+            android:text="Test Receiver"/>
     </LinearLayout>
 
     <LinearLayout

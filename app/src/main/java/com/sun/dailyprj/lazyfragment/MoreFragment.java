@@ -68,7 +68,7 @@ public class MoreFragment extends LazyFragment{
                     content = "Post";
                     break;
                 case 4:
-                    content = "User";
+                    content = "DataBindingUser";
                     break;
             }
             tvLoading.setText(content);

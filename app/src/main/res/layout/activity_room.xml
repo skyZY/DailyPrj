@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="setUser"
+            type="com.sun.dailyprj.androidx.room.entity.User" />
+        <variable name="ra" type="com.sun.dailyprj.androidx.room.RoomActivity"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_room_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_db" />
+
+        <Button
+            android:id="@+id/btn_room_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_room_insert_string"/>
+
+        <Button
+            android:id="@+id/btn_room_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{ra::onUpdate}"
+            android:text="@string/btn_room_update_string"/>
+
+    </LinearLayout>
+
+</layout>
