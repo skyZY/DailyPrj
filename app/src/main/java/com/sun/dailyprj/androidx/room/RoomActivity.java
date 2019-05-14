@@ -89,7 +89,10 @@ public class RoomActivity extends AppCompatActivity{
                         User zhangyu = new User();
                         zhangyu.setName("Zhang yu");
                         zhangyu.setRemark("We went to high school together");
+                        zhangyu.setSex("female");
                         dao.insertAllUser(zhangyu);
+                        List<User> users = RoomAppDatabase.getInstance(mContext).getUserDao().getAllUser();
+                        Log.i("syp", "insert ok ;users:" + users.toString());
                     }
                 });
             }
@@ -103,6 +106,7 @@ public class RoomActivity extends AppCompatActivity{
             public void run() {
                 User userUpdate = new User();
                 userUpdate.setName("zhang san");
+                userUpdate.setSex("female");
                 userUpdate.setRemark("update remark by name='zhang san'");
                 RoomAppDatabase.getInstance(mContext).getUserDao().update();
                 RoomAppDatabase.getInstance(mContext).getUserDao().updateCustom("Zhou wen wang", 3);

@@ -35,10 +35,12 @@ public class User{
     private int uid;
     @ColumnInfo(name = "name")
     private String name;
-    @ColumnInfo
+    @ColumnInfo(name = "remark")
     private String remark;
     @Embedded
     public Address address;
+    @ColumnInfo(name = "sex")
+    private String sex;
 
     public int getUid() {
         return uid;
@@ -72,15 +74,24 @@ public class User{
         this.address = address;
     }
 
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
     public User() {
     }
 
     @Ignore
-    public User(int uid, String name, String remark, Address address) {
+    public User(int uid, String name, String remark, Address address,String sex) {
         this.uid = uid;
         this.name = name;
         this.remark = remark;
         this.address = address;
+        this.sex = sex;
     }
 
     @Override
@@ -90,6 +101,7 @@ public class User{
                 ", name='" + name + '\'' +
                 ", remark='" + remark + '\'' +
                 ", address=" + address +
+                ", sex='" + sex + '\'' +
                 '}';
     }
 }
