@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sun.dailyprj">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <!-- GPS定位权限 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -32,24 +32,24 @@
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
-        <activity android:name=".junit.operate.SayHelloActivity"/>
-        <activity android:name=".junit.calculator.CalculatorActivity"/>
+        <activity android:name=".junit.operate.SayHelloActivity" />
+        <activity android:name=".junit.calculator.CalculatorActivity" />
 
-        <activity android:name=".designpatterns.DesignPatternsActivity"/>
-        <activity android:name=".view.CustomViewActivity"/>
+        <activity android:name=".designpatterns.DesignPatternsActivity" />
+        <activity android:name=".view.CustomViewActivity" />
 
-        <activity android:name=".view.canvas.CanvasActivity"/>
-        <activity android:name=".view.canvas.BesselActivity"/>
+        <activity android:name=".view.canvas.CanvasActivity" />
+        <activity android:name=".view.canvas.BesselActivity" />
 
-        <activity android:name=".thread.callable.CallAbleActivity"/>
-        <activity android:name=".thread.ThreadActivity"/>
-        <activity android:name=".generics.GenericsActivity"/>
+        <activity android:name=".thread.callable.CallAbleActivity" />
+        <activity android:name=".thread.ThreadActivity" />
+        <activity android:name=".generics.GenericsActivity" />
         <activity android:name=".generics.GenericAdapterActivity" />
-        <activity android:name=".WebViewActivity"/>
-        <activity android:name=".network.NetworkActivity"/>
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".network.NetworkActivity" />
         <activity android:name=".lazyfragment.LazyFragmentActivity" />
-        <activity android:name=".frame.FrameActivity"/>
-        <activity android:name=".frame.glide.GlideActivity"/>
+        <activity android:name=".frame.FrameActivity" />
+        <activity android:name=".frame.glide.GlideActivity" />
         <activity android:name=".navigation.NavigationActivity" />
         <activity android:name=".androidx.AndroidXActivity" />
         <activity android:name=".androidx.appcompat.DrawerLayoutActivity" />
@@ -57,6 +57,18 @@
         <activity android:name=".androidx.percent.PercentFrameLayoutActivity" />
         <activity android:name=".androidx.data_binding.DataBindingActivity" />
         <activity android:name=".androidx.recyclerview.RecyclerViewActivity" />
+        <activity android:name=".androidx.data_binding.DataBindingActivity2" />
+        <activity android:name=".androidx.data_binding.cases.DataBindingActivityCase" />
+        <activity android:name=".receiver.ReceiverActivity" />
+        <activity android:name=".androidx.room.RoomActivity" />
+
+
+        <receiver android:name=".receiver.TestBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.action.Test.RECEIVER" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>

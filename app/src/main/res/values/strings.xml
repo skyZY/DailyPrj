@@ -30,4 +30,10 @@
                         android { ... dataBinding { enabled = true } } </string>
     <string name="recyclerview_case">RecyclerView case</string>
     <string name="textviewInfo">RecyclerView的使用,LinearLayoutManager/GridLayoutManager(网格)/StaggeredGridLayoutManager(瀑布)</string>
+    <string name="data_binding_2">Data Binding 2</string>
+    <string name="data_binding_case">Data Binding Case</string>
+    <string name="seacher_products">Seacher Products...</string>
+    <string name="loading_products">Loading products...</string>
+    <string name="cd_products_list">Products list</string>
+    <string name="btn_start_baidumap">启动百度地图导航</string>
 </resources>

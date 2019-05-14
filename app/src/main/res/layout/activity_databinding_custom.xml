@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="dba" type="com.sun.dailyprj.androidx.data_binding.DataBindingActivity2"/>
+        <variable name="bol" type="Boolean"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/dba_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button1"
+            android:onClick="@{view-> dba.onClickGetData(view)}"
+            android:clickable="@{bol}"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button2"
+            android:onClick="@{view-> dba.changeUi(view,bol)}"
+            />
+
+        <Button
+            android:id="@+id/btn_start_baiduMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_start_baidumap"/>
+
+
+    </LinearLayout>
+
+</layout>

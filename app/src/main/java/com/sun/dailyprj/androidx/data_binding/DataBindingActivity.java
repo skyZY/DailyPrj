@@ -3,8 +3,11 @@ package com.sun.dailyprj.androidx.data_binding;
 import android.os.Bundle;
 
 import com.sun.dailyprj.R;
+import com.sun.dailyprj.androidx.data_binding.bean.User;
+import com.sun.dailyprj.databinding.ActivityDataBindingBinding;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 
 /*
  * =====================================================================================
@@ -16,12 +19,17 @@ import androidx.appcompat.app.AppCompatActivity;
  * =====================================================================================
  */
 public class DataBindingActivity extends AppCompatActivity{
+    private ActivityDataBindingBinding mBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_data_binding);
-
+        mBinding = DataBindingUtil.setContentView(this,R.layout.activity_data_binding);
+//        setContentView(R.layout.activity_data_binding);
+        User user = new User();
+        user.setName("Zhang san");
+        user.setSex("male");
+        mBinding.setUser(user);
 
     }
 }

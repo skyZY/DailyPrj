@@ -5,15 +5,24 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Androidx相关知识的学习使用"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <LinearLayout
         android:id="@+id/ll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/tv_info">
 
         <Button
             android:layout_width="wrap_content"
@@ -53,9 +62,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:text="@string/recyclerview_case"
         android:onClick="startRecyclerView"
+        android:text="@string/recyclerview_case"
         app:layout_constraintLeft_toRightOf="@+id/btn_databind_start"
         app:layout_constraintTop_toBottomOf="@+id/ll" />
+
+    <Button
+        android:id="@+id/btn_data_binding2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startDataBinding2"
+        android:text="@string/data_binding_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_recyclerview_start" />
+
+    <Button
+        android:id="@+id/btn_data_binding_case"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startDataBindingCase"
+        android:text="@string/data_binding_case"
+        app:layout_constraintLeft_toRightOf="@+id/btn_data_binding2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_recyclerview_start" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room db"
+        android:onClick="startRoom"
+        app:layout_constraintLeft_toRightOf="@+id/btn_data_binding_case"
+        app:layout_constraintTop_toBottomOf="@+id/btn_recyclerview_start"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.sun.dailyprj.R;
 
@@ -44,7 +43,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
             @Override
             public void onClick(View v) {
                 //item 点击事件
-                Log.i("syp","click position:" + position);
+                Log.i("syp", "click position:" + position);
             }
         });
     }

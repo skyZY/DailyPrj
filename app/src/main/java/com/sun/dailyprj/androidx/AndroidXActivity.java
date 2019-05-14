@@ -7,9 +7,12 @@ import android.view.View;
 import com.sun.dailyprj.R;
 import com.sun.dailyprj.androidx.appcompat.DrawerLayoutActivity;
 import com.sun.dailyprj.androidx.data_binding.DataBindingActivity;
+import com.sun.dailyprj.androidx.data_binding.DataBindingActivity2;
+import com.sun.dailyprj.androidx.data_binding.cases.DataBindingActivityCase;
 import com.sun.dailyprj.androidx.percent.PercentFrameLayoutActivity;
 import com.sun.dailyprj.androidx.percent.PercentLayoutActivity;
 import com.sun.dailyprj.androidx.recyclerview.RecyclerViewActivity;
+import com.sun.dailyprj.androidx.room.RoomActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -49,5 +52,17 @@ public class AndroidXActivity extends AppCompatActivity{
 
     public void startRecyclerView(View view) {
         startActivity(new Intent(this, RecyclerViewActivity.class));
+    }
+
+    public void startDataBinding2(View view) {
+        startActivity(new Intent(this, DataBindingActivity2.class));
+    }
+
+    public void startDataBindingCase(View view) {
+        startActivity(new Intent(this, DataBindingActivityCase.class));
+    }
+
+    public void startRoom(View view) {
+        startActivity(new Intent(this, RoomActivity.class));
     }
 }
