@@ -18,7 +18,7 @@ import androidx.room.PrimaryKey;
         foreignKeys = {
         @ForeignKey(entity = User.class,
                 parentColumns = "uid",
-                childColumns = "user_id")
+                childColumns = "bookId")
 })
 public class Book{
     @PrimaryKey(autoGenerate = true)

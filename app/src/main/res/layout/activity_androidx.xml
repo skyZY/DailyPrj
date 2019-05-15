@@ -86,11 +86,22 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_recyclerview_start" />
 
     <Button
+        android:id="@+id/btn_room_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Room db"
         android:onClick="startRoom"
+        android:text="Room db"
         app:layout_constraintLeft_toRightOf="@+id/btn_data_binding_case"
-        app:layout_constraintTop_toBottomOf="@+id/btn_recyclerview_start"/>
+        app:layout_constraintTop_toBottomOf="@+id/btn_recyclerview_start" />
+
+    <Button
+        android:id="@+id/btn_viewmodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startViewModel"
+        android:text="@string/viewmodel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_data_binding2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

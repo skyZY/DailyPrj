@@ -3,6 +3,7 @@ package com.sun.dailyprj.androidx.room.entity;
 import androidx.room.ColumnInfo;
 import androidx.room.Embedded;
 import androidx.room.Entity;
+import androidx.room.ForeignKey;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
@@ -37,7 +38,7 @@ public class User{
     private String name;
     @ColumnInfo(name = "remark")
     private String remark;
-    @Embedded
+    @Ignore
     public Address address;
     @ColumnInfo(name = "sex")
     private String sex;
@@ -86,7 +87,7 @@ public class User{
     }
 
     @Ignore
-    public User(int uid, String name, String remark, Address address,String sex) {
+    public User(int uid, String name, String remark, Address address, String sex) {
         this.uid = uid;
         this.name = name;
         this.remark = remark;

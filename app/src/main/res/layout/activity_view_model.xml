@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="vma"
+            type="com.sun.dailyprj.androidx.viewmodel.ViewModelActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_vm_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="intr" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{view-> vma.changePerson(view)}"
+            android:text="更改数据" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="60dp"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/tv_vm_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>

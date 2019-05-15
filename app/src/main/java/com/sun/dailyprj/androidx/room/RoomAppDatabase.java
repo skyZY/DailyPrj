@@ -29,7 +29,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
  * @Database ： 标注数据库持久化的类。
  * update db
  */
-@Database(entities = {User.class, Book.class}, version = 2)
+@Database(entities = {User.class, Book.class}, version = 3)
 public abstract class RoomAppDatabase extends RoomDatabase{
 
     private static final String DB_NAME = "room_db";
@@ -65,6 +65,12 @@ public abstract class RoomAppDatabase extends RoomDatabase{
         public void migrate(@NonNull SupportSQLiteDatabase database) {
             database.execSQL("alter table _user add column sex text");
             database.execSQL("alter table _user add column remark text");
+        }
+    };
+
+    public static Migration Migration_2_3 = new Migration(2,3){
+        @Override
+        public void migrate(@NonNull SupportSQLiteDatabase database) {
         }
     };
 

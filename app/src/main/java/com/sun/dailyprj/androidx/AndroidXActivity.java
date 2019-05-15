@@ -13,6 +13,7 @@ import com.sun.dailyprj.androidx.percent.PercentFrameLayoutActivity;
 import com.sun.dailyprj.androidx.percent.PercentLayoutActivity;
 import com.sun.dailyprj.androidx.recyclerview.RecyclerViewActivity;
 import com.sun.dailyprj.androidx.room.RoomActivity;
+import com.sun.dailyprj.androidx.viewmodel.ViewModelActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -64,5 +65,9 @@ public class AndroidXActivity extends AppCompatActivity{
 
     public void startRoom(View view) {
         startActivity(new Intent(this, RoomActivity.class));
+    }
+
+    public void startViewModel(View view) {
+        startActivity(new Intent(this, ViewModelActivity.class));
     }
 }
